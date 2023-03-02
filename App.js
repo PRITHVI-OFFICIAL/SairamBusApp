@@ -12,6 +12,7 @@ import SeatSelection from './screens/SeatSelection';
 import ContactInfo from './screens/ContactInfo';
 import Userprofile from './screens/UserProfile';
 import ForgetPassword from './screens/ForgetPassword';
+import Ticket from './screens/Ticket';
 
 const Stack = createStackNavigator();
 const AuthenticatedUserContext = createContext({});
@@ -32,7 +33,7 @@ function HomeStack() {
       <Stack.Screen name='BusRoute' component={BusRoute}/>
       <Stack.Screen name='SeatSelection' component={SeatSelection}/>
       <Stack.Screen name='ContactInfo' component={ContactInfo}/>
-      {/* <Stack.Screen name='FormPage' component={FormPage}/> */}
+      <Stack.Screen name='Ticket' component={Ticket}/>
       <Stack.Screen name='Userprofile' component={Userprofile}/>
     </Stack.Navigator>
   );

@@ -1,8 +1,9 @@
 import { View, TouchableOpacity, Text, Image, StyleSheet,TextInput } from "react-native";
 import colors from '../colors';
-const DropCard = ({place,time,price}) => {
+const DropCard = ({place,time,price,h}) => {
+
     return (
-                <View style={styles.card} >
+                <View style={[styles.card,{height: h}]} >
                 <View style={{justifyContent:"space-evenly"}}>
                 <Text style={{fontSize:20,}}>{place}</Text>
                 <Text style={{}}>{time}</Text>
@@ -13,7 +14,7 @@ const DropCard = ({place,time,price}) => {
                 <View  style={{justifyContent:"space-evenly",marginRight:10}}>
                 <Text style={{fontSize:20,fontWeight:"bold",color:colors.primary}}>{price}</Text>
                 <Text style={{fontSize:15,}}>9h</Text>
-                <Text style={{fontSize:12,color:colors.primary}}>Click here</Text>
+                <Text style={{fontSize:12,color:colors.primary}}></Text>
                 </View>
                 
             </View>
@@ -21,16 +22,15 @@ const DropCard = ({place,time,price}) => {
     );
     };
 
-export default DropCard;
 const styles=StyleSheet.create({
-
+    // default height 120
     card:{
         margin:15,
         backgroundColor: colors.mediumGray, 
-        height:120,
         flexDirection:"row",
         justifyContent:"space-between",
         paddingLeft:10,
         paddingRight:10,
     }
 })
+export default DropCard;

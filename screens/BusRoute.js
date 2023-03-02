@@ -40,12 +40,10 @@ function BusRoute({route}) {
 const styles = StyleSheet.create({
 
 bluecontainer:{
-    backgroundColor:colors.primary, 
     height:200,
-    justifyContent:"center",
-    alignItems:"center",
-    borderBottomEndRadius:20, 
-    borderBottomStartRadius:20,
+    backgroundColor: colors.primary, 
+    justifyContent:"center", 
+    alignItems:'center'
 },
 heading:{
     color:"white", 

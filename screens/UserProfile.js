@@ -63,8 +63,7 @@ const currentmail=getAuth()?.currentUser.email;
             />
             <View style={{alignItems:"center",width:"100%"}}>
 
-            
-            
+
             <View style={{height:200,justifyContent:"space-evenly",width:300,alignItems:"center"}}>
 
             <TextInput
